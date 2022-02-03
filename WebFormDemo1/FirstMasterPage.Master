@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FirstMasterPage.master.cs" Inherits="WebFormDemo1.FirstMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>FirstMasterPage</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSSContent/CSSTOMASTERPAGE.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav id="nav">
+                <div id="div1">
+                <ul>
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="About.aspx">AboutUs</a></li>
+                    <li><a href="Contact.aspx">Products</a></li>
+                    <li><a href="Product.aspx">Contact</a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+        <aside id="side">
+            <h2>News</h2>
+            <a href="#"><p>Go to Product Section</p></a>
+            <a href="#"><p>Go to Home Section</p></a>
+        </aside>
+        <div id="contentSection">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <footer id="footer">
+                This is Footer Section
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
